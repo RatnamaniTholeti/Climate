@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather_Project</title>
+</head>
+<style>
+    body
+    {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;   
+      justify-content: center;
+      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8));
+    }
+    #b{
+        display: flex;
+        align-items: center;   
+        justify-content: space-between;
+        padding: 10px;
+        
+       }
+       button
+       {
+        border: 3px double black;
+        height: 40px;
+        width: 60px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;   
+        justify-content: center;
+
+       }
+       button:hover
+       {
+        background-color: gray;
+       }
+       img
+       {
+        border: 4px solid black;
+        border-radius: 5%;
+       }
+</style>
+<body>
+    <div>
+    <img src="https://th.bing.com/th/id/OIP.9yLMAw9iaxF7H2bxWzNiCgHaEo?pid=ImgDet&rs=1" alt="Mrng" height="300" width="300" id="wea">
+
+    <div id="b" >
+        <button onclick="mrng()">MRNG</button>
+        <button onclick="an()">AFN</button>
+        <button onclick="night()">NIGHT</button>
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
